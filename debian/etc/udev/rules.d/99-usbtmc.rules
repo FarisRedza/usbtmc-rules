@@ -1,0 +1,3 @@
+# USBTMC instruments
+
+KERNEL=="usbtmc*", MODE="0666", GROUP="usbtmc"
