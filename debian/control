@@ -1,7 +1,8 @@
 Package: usbtmc-rules
-Version: 1.0-1
-Section: misc
-Priority: optional
+Version: 0.1
 Architecture: all
+Section: misc
+Essential: no
+Priority: optional
 Maintainer: Faris Redza <faris.redza1999@gmail.com>
 Description: udev rules for USBTMC devices such as Thorlabs equipment.
