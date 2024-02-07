@@ -4,7 +4,7 @@ PKG_VERSION = 1
 ARCH = all
 PKG_NAME = $(NAME)_$(VERSION)-$(PKG_VERSION)_$(ARCH).deb
 
-UDEV_DIR = etc/udev/rules.d/
+UDEV_DIR = usr/lib/udev/rules.d/
 
 deb_package:
 	mkdir -p PKG_SOURCE

@@ -1,5 +1,5 @@
 Package: usbtmc-rules
-Version: 0.1
+Version: 0.2
 Architecture: all
 Section: misc
 Essential: no
