@@ -1,0 +1,11 @@
+usbtmc-rules (0.3-1) jammy; urgency=medium
+
+  * Improved debian packaging
+
+ -- Faris Redza <faris.redza1999@gmail.com>  Tue, 20 Feb 2024 22:54:44 +0000
+
+usbtmc-rules (0.2-1) jammy; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Faris Redza <faris.redza1999@gmail.com>  Sun, 11 Feb 2024 14:27:33 +0000

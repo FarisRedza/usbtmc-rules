@@ -1,8 +1,15 @@
-Package: usbtmc-rules
-Version: 0.2
-Architecture: all
-Section: misc
-Essential: no
+Source: usbtmc-rules
+Section: admin
 Priority: optional
 Maintainer: Faris Redza <faris.redza1999@gmail.com>
-Description: udev rules for USBTMC devices such as Thorlabs equipment.
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://github.com/FarisRedza/usbtmc-rules
+Vcs-Browser: https://github.com/FarisRedza/usbtmc-rules
+Vcs-Git: https://github.com/FarisRedza/usbtmc-rules.git
+Rules-Requires-Root: no
+
+Package: usbtmc-rules
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: udev rules for USBTMC devices such as Thorlabs equipment

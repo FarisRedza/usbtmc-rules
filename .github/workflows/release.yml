@@ -18,9 +18,11 @@ jobs:
 
       - name: Build the package
         run: |
-          make deb_package
+          sudo apt install debmake debhelper
+          debmake -p usbtmc-rules -t
+          debuild -us -uc
 
       - name: Release the Package
         uses: softprops/action-gh-release@v1
         with:
-          files: usbtmc-rules_0.2-1_all.deb
+          files: ../usbtmc-rules*.deb

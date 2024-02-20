@@ -1,17 +1,12 @@
-NAME = usbtmc-rules
-VERSION = 0.2
-PKG_VERSION = 1
-ARCH = all
-PKG_NAME = $(NAME)_$(VERSION)-$(PKG_VERSION)_$(ARCH).deb
+prefix = /etc
 
-UDEV_DIR = usr/lib/udev/rules.d/
+all: src/99-usbtmc.rules
 
-deb_package:
-	mkdir -p PKG_SOURCE
-	cp -r debian PKG_SOURCE/DEBIAN
+install: src/99-usbtmc.rules
+	install -D src/* \
+		-t $(DESTDIR)$(prefix)/udev/rules.d
 
-	mkdir -p PKG_SOURCE/$(UDEV_DIR)/
-	cp -r src/* PKG_SOURCE/$(UDEV_DIR)
-	
-	dpkg-deb --root-owner-group --build PKG_SOURCE $(PKG_NAME)
-	rm -r PKG_SOURCE
+uninstall:
+	-rm -rf $(DESTDIR)$(prefix)/udev/rules.d/99-usbtmc.rules
+
+.PHONY: all install uninstall

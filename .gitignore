@@ -1,2 +1,8 @@
 PKG_SOURCE/
 *.deb
+debian/*
+!debian/source
+!debian/changelog
+!debian/control
+!debian/copyright
+!debian/rules
